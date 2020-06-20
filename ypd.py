@@ -10,7 +10,8 @@ soup = bs4.BeautifulSoup(data.text,'html.parser')
 for links in soup.find_all('a'):
     link = links.get('href')
     if(link[0:6]=="/watch" and link[0]!="#"):
-        link=str("https://www.youtube.com"+link)
+        link="https://www.youtube.com"+link
+        link = str(link)
         playlist.append(list)
 
 print(playlist)
