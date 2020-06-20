@@ -14,4 +14,6 @@ for links in soup.find_all('a'):
         link = str(link)
         playlist.append(link)
 
-#print(playlist)
+playlist = list(dict.fromkeys(playlist))
+print(len(playlist))
+
