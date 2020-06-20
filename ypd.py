@@ -12,6 +12,6 @@ for links in soup.find_all('a'):
     if(link[0:6]=="/watch" and link[0]!="#"):
         link="https://www.youtube.com"+link
         link = str(link)
-        playlist.append(list)
+        playlist.append(link)
 
-print(playlist)
+#print(playlist)
